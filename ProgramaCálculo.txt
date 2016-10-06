@@ -1,0 +1,43 @@
+ <script>
+
+var pulalinha = function() {
+	document.write("<hr>");
+};
+
+var mostra = function(frase) {
+	document.write(frase); 
+	pulalinha();
+	
+}
+var calculaPISTA = function() {
+	var pista = ((a * pi) * c) + (b * (3 * pi / 2) * c) + d;
+	return pista;
+	
+}
+
+
+var curva = prompt("Insira a quantidade de curvas com ângulo de 180 graus.");
+mostra("A quantidade de curvas é: " + curva);
+var graus = prompt("Insira a quantidade de curvas com ângulo de 270 graus.");
+mostra("A quantidade de curvas com ângulo de 270 graus é: " + graus);;
+var raio = prompt("Insira o raio das curvas (cm)");
+mostra("O raio das curvas é: " + raio + "cm");
+var tamanho = prompt("Insira o comprimento da reta (cm)");
+mostra("O comprimento da reta é: " + tamanho + "cm");
+
+
+
+var pi = 3.141592654;
+var a = curva;
+var b = graus;
+var c = raio;
+
+var h = ((a * pi) * c) + (b * (3 * pi / 2) * c);
+
+
+var pista
+	pista = (tamanho / 1) + h;
+	
+mostra("O tamanho total da pista é: " + pista + "cm")		
+mostra("O tempo para percorrer a pista é de: " + (pista / 31.45) + " segundos");
+</script>
